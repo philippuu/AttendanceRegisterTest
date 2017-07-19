@@ -1,0 +1,19 @@
+<section>
+    <div class="center">
+		<h1>Register Here</h1>
+        <form name="form" ng-submit="vm.register()">
+			<br><br>
+			<input type="text" name="firstName" id="firstName" ng-model="vm.user.firstName" placeholder="First Name">
+			<br><br>
+			<input type="text" name="lastName" id="Text1" ng-model="vm.user.lastName" placeholder="Last Name">
+			<br><br>
+			<input type="text" name="username" id="username" ng-model="vm.user.username" placeholder="User Name">
+			<br><br>
+			<input type="password" name="password" id="password" ng-model="vm.user.password" placeholder="Password">
+			<br><br>
+			<input type="submit" name="signup" ng-disabled="form.$invalid || vm.dataLoading" value="SignUp" class="btn btn-primary">
+			<br>
+			<a href="#!/login" class="btn btn-link">Cancel</a>
+        </form>
+    </div>
+</section>

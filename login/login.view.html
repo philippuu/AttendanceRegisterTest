@@ -1,0 +1,17 @@
+<section>
+	<div class="center">
+		<h1>Login Here</h1>
+		<form name="form" ng-submit="vm.login()" role="form">
+			<br><br>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" ng-model="vm.username" required />
+			<br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" ng-model="vm.password" required />
+            <br><br>
+			<button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Login</button><!--
+			<input ng-disabled="form.$invalid || vm.dataLoading" type="submit" name="login" value="Login">-->
+			<p>Don't have an account? <span><a href="#!/register"><br>Signup</a></span></p>
+        </form>
+    </div>
+</section>
